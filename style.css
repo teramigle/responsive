@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+  background-image: url("./paveiksleliai/unsplash.jpg");
+  background-color: #cccccc;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+button {
+    border: solid #E37385;
+    color: #E37385;
+    background-color: rgba(255,255,255,0.5);
+    width: 150px;
+    height: 32pt;
+    position: relative;
+    top: 60%;
+    cursor: pointer;
+}
+
+.images {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.images img {
+    width: calc((100% / 3) - 3px);
+    height: 250px;
+    object-fit: cover;
+    object-position: 100% 0;
+    display: inline-block;
+}
+
+.about {
+    width: 65%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: normal;
+    padding: 50px 30px 30px 30px;
+}
+
+p {
+    padding-bottom: 30px;
+}
+
+ul {
+    width: calc((100% / 2) - 10px);
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    padding-right: 30px;
+}
+
+li {
+    border-top: 1px solid grey; 
+    padding-bottom: 40px;
+    padding-top: 5px;
+}
+
+.last {
+    border-bottom: 1px solid grey;
+}
+
+.services {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services img {
+    width: calc((100% / 2) - 30px);
+    height: 350px;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer {
+    background-color: #2d2d2d;
+    color: white;
+    height: 380px;
+}
+
+span {
+    display: block;
+    padding: 10px;
+}
+
+.footer {
+    padding: 100px 0 0 0;
+}
+
+.fb {
+    width: 60px;
+    
+}
+
+.twitter, .google {
+    width: 40px;
+    padding: 10px;
+}
+
+@media (max-width: 760px) {
+    .images img {
+        width: calc((100% / 2) - 3px);
+    }
+    
+    ul, .services img {
+        width: calc((100% / 2) - 30px);
+    }
+}
+    
+    
+
+@media (max-width: 560px) {
+    .images img, ul, .services img {
+    width: 100%;
+    }
+}
